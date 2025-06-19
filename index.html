@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Composition Tool - Web</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎼 Music Composition Tool</h1>
+
+        <div class="input-group">
+            <label class="label" for="mood">Mood :</label>
+            <input type="text" id="mood" placeholder="Tapez un mood...">
+            <div id="moodList"></div>
+        </div>
+
+        <div class="input-group">
+            <label class="label" for="genre">Genre :</label>
+            <input type="text" id="genre" placeholder="Tapez un genre...">
+            <div id="genreList"></div>
+        </div>
+
+        <div class="input-group">
+            <label class="label" for="artist">Artiste / Groupe :</label>
+            <input type="text" id="artist" placeholder="Tapez un artiste...">
+            <div id="artistList"></div>
+        </div>
+
+        <div class="input-group">
+            <label class="label" for="key">Clé (tonalité) :</label>
+            <select id="key">
+                <option value="">C (par défaut)</option>
+<option>C</option><option>C#</option><option>D</option><option>D#</option><option>E</option><option>F</option><option>F#</option><option>G</option><option>G#</option><option>A</option><option>A#</option><option>B</option><option>Cm</option><option>C#m</option><option>Dm</option><option>D#m</option><option>Em</option><option>Fm</option><option>F#m</option><option>Gm</option><option>G#m</option><option>Am</option><option>A#m</option><option>Bm</option>
+            </select>
+        </div>
+
+        <button onclick="generate()">🎹 Générer 20 progressions</button>
+
+        <div class="results">
+            <h3>Résultats :</h3>
+            <ul id="results"></ul>
+        </div>
+    </div>
+
+    <script src="data/data.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
